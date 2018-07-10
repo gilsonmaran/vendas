@@ -1,0 +1,1 @@
+Classes de View. Aqui ficará todos os arquivos como CSS, img, JS e outras bibliotecas e frameworks necessários.
