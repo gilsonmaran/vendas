@@ -7,21 +7,14 @@ Por este motivo, não trata-se de um sistema complexo, mas possui uma usabilidad
 Serão utilizadas, neste projeto as tecnologias listadas abaixo, sendo outras ainda não listadas poderão surgir.
 Nem todas serão implementadas em um primeiro momento, mas asim, apenas na evolução do sistema.
 
-** Front-end
-	* HTML 5 e CSS 3
-	* Javascript e jQuery
-	* Vue
-	* Bootstrap 4
-
-** Back-end
-	* PHP 7
-	* Laravel
-
-** Banco de Dados
-	* MySQL
-	
-** Gerenciador de Dependência
-	* Composer
+* HTML 5 e CSS 3
+* Javascript e jQuery
+* Vue
+* Bootstrap 4
+* PHP 7
+* Laravel
+* MySQL
+* Composer
 
 Apesar de tamanha quantidade de tecnologias, estará sendo usada as melhoras boas práticas de cada 
 integrante do grupo, onde cada um se compromente fazer com excenlência seu trabalhod entro das datas estabelecidas.
