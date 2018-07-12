@@ -23,6 +23,7 @@ $(document).ready(function() {
 	});
 });
 
+
 function openCloseDropdown(status, dropdown) {
 	if (status)
 		$(dropdown).slideUp('slow');
