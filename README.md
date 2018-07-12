@@ -1,13 +1,14 @@
 # Sistema de Vendas
 Este projeto foi elaborado com o conceito de servir para estudo em desenvolvimento web.
-Por este motivo, não trata-se de um sistema complexo, mas possui uma usabilidade mínima eficiente.
+Por este motivo, não trata-se de um sistema complexo, mas ainda possui uma usabilidade mínima (MVP).
 
 
 ## Tecnologias a serem utilizadas
-Serão utilizadas, neste projeto as tecnologias listadas abaixo, sendo outras ainda não listadas poderão surgir.
-Nem todas serão implementadas em um primeiro momento, mas asim, apenas na evolução do sistema.
+Serão utilizadas neste projeto as tecnologias listadas abaixo, podendo ainda outras serem acrescentadas como Angular, React, Ember em algum momento, dependendo do integrante que implementar seu sprint.
+Nem todas serão implementadas em um primeiro momento, mas sim, apenas na evolução do sistema.
 
 * HTML 5 e CSS 3
+* SCSS
 * Javascript e jQuery
 * Vue
 * Bootstrap 4
@@ -16,8 +17,8 @@ Nem todas serão implementadas em um primeiro momento, mas asim, apenas na evolu
 * MySQL
 * Composer
 
-Apesar de tamanha quantidade de tecnologias, estará sendo usada as melhoras boas práticas de cada 
-integrante do grupo, onde cada um se compromente fazer com excenlência seu trabalhod entro das datas estabelecidas.
+Apesar de quantidade de tecnologias, estará sendo usada as melhores boas práticas de cada 
+integrante do grupo, onde cada um se compromente fazer com excenlência seu trabalho dentro das datas estabelecidas em cada sprint.
 Lembrando que excenlência não é fazer melhor do que todos, mas fazer o melhor de si mesmo, dando seu máximo.
 
 Quando todo o projeto estiver concluído, o mesmo será migrado para Laravel. Será importante nos avaliar em uma
@@ -30,9 +31,8 @@ Desta forma, podemos analisar duas coisas neste projeto:
 ## Notas
 * O sistema não terá um padrão de layout ou desenvolvimento em primeira instância, uma vez que servirá de base de aprendizado.
 * Muitas coisas irracionais poderão acontecer, uma vez que cada integrante possui um nivel de conhecimento 
-e liberdade para desenvolver a sua maneira até certo ponto do projeto.
-* Apesar de toda a liberdade e "provocação ao caos", após alguns sprints o sistema passará por uma manutenção de 
-correção e melhorias em sua estrutura, dando neste ponto, uma padronização eficiente.
+e liberdade para desenvolver a sua maneira até certo estágio do projeto.
+* Apesar de toda a liberdade e "provocação ao caos", após alguns sprints o sistema passará por padronização, tanto de código fonte como de estrutura.
 * O sistema será desenvolvido sobre a arquitetura MVC.
 * O grupo procurará utilizar Padrões de Projeto.
 * O grupo procurará utilizar das recomentações PSR do PHP.
