@@ -1,0 +1,222 @@
+:root {
+	--theme-color-default: #ddd;
+
+	--theme-color-blue: #1C95DE;
+	--theme-color-blue-dark: #1986c7;
+
+	--theme-color-green: #A4D200;
+	--theme-color-green-dark: #93bd00;
+	
+	--theme-color-orange: #F89A0A;
+	--theme-color-orange-dark: #e18b06;
+
+	--theme-color-red: #F24740;
+	--theme-color-red-dark: #f02b23;
+
+	--theme-color-purple: #8F43AF;
+	--theme-color-purple-dark: #803c9d;
+
+	--theme-color-text: #333;
+	--theme-color-gray-1: #DDD;
+	--theme-color-gray-2: #999;
+	--theme-color-gray-3: #666;
+	--theme-color-gray-4: #333;
+}
+
+/*  -------------------------
+ * CORES
+ * ------------------------*/
+ .red {background-color: var(--theme-color-red);}
+ .red:hover {background-color: var(--theme-color-red-dark);}
+ .blue {background-color: var(--theme-color-blue);}
+ .blue:hover {background-color: var(--theme-color-blue-dark);}
+ .green {background-color: var(--theme-color-green);}
+ .green:hover {background-color: var(--theme-color-green-dark);}
+ .orange {background-color: var(--theme-color-orange);}
+ .orange:hover {background-color: var(--theme-color-orange-dark);}
+
+/* -------------------------
+ * GERAIS
+ * -----------------------*/
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ body {
+ 	font-family: 'Montserrat', 'Verdana', sans-serif;
+ 	font-weight: bold;
+ 	font-size: 12px;
+ }
+ 
+ ul {
+ 	list-style: none;
+ }
+
+/* -------------------------
+ * MENU
+ * ------------------------*/
+ .brand {
+ 	background-color: var(--theme-color-blue);
+ 	width: 200px;
+ 	text-align: center;
+ 	padding: 10px 0;
+ }
+
+ nav {
+ 	height: 100vh;
+ 	width: 200px;
+ 	background-color: var(--theme-color-gray-4);
+ 	display: block;
+ 	position: fixed;
+ 	color: white;
+ 	cursor: pointer;
+ }
+
+ nav ul {
+ 	padding-bottom: 20px;
+ 	list-style: none;
+ }
+
+ nav li {
+ 	background-color: var(--theme-color-gray-4);
+ 	border-bottom: 1px solid var(--theme-color-gray-2);
+ }
+
+ nav li:first-child {
+ 	border-top: 1px solid var(--theme-color-gray-2);
+ }
+
+ nav .sub-nav li:hover .fas {
+ 	color: var(--theme-color-red-dark);
+ }
+
+ nav a {
+ 	text-decoration: none;
+ 	color: inherit;
+ }
+
+ .nav-item,
+ .sub-nav-item {	
+ 	padding: 10px;
+ }
+
+ .sub-nav-item {
+ 	background-color: var(--theme-color-gray-3);
+ }
+
+ .nav-item:hover,
+ .sub-nav-item:hover {
+ 	background-color: var(--theme-color-green);
+ 	font-weight: bold;
+ }
+
+ nav li:hover {
+ 	background-color: #999;
+ }
+
+/* -------------------------
+ * CONTEÚDO
+ * -----------------------*/
+ .content {
+ 	height: 100vh;
+ 	display: block;
+ 	margin: 0 0 0 200px;
+ 	width: calc(100vw - 200px);
+ 	background-color: var(--theme-color-gray);
+ }
+
+/* -------------------------
+ * BOXES DE MENU
+ * -----------------------*/
+ .boxes {
+ 	display: flex;
+ 	flex-direction: row;
+ 	color: white;
+ 	font-weight: bold;
+ 	text-align: center;
+ }
+
+ .box {
+ 	width: 400px;
+ 	height: 50px;
+ 	margin: 20px 10px;
+ }
+
+ .box input[type="search"] {
+ 	height: 30px;
+ 	width: 80%;
+ 	padding: 10px;
+ 	margin: 10px 0;
+ 	border: none;
+ 	color: var(--theme-color-orange);
+ 	font-family: 'Montserrat', 'Verdana', sans-serif;
+ }
+
+ .message .fas {
+ 	padding: 10px;
+ 	font-size: 30px;
+ }
+
+/* -------------------------
+ * DAHSBOARD
+ * -----------------------*/
+ .boxes-info {
+ 	display: flex;
+ 	flex-direction: row;
+ 	color: white;
+ 	text-align: center;
+ }
+
+ .box-info {
+ 	width: 400px;
+ 	margin: 0 10px;
+ 	padding: 20px;
+ }
+
+ .box-info-value {
+ 	font-size: 18px;
+ }
+
+ .boxes-info .fas {
+ 	font-size: 40px;
+ }
+
+ .box-info-title {
+ 	padding: 15px;
+ }
+
+ .fa-angle-down {
+ 	padding: 0 10px;
+ }
+
+ .pool,
+ .user {
+ 	padding: 18px;
+ }
+
+/* -------------------------
+ * DROPDOWN
+ * -----------------------*/
+ #dropdown-user a,
+ #dropdown-message a,
+ #dropdown-notification a {
+ 	text-decoration: none;
+ 	display: block;
+ 	padding: 20px;
+ 	margin: 2px 0;
+ 	background-color: rgba(51, 51, 51, 0.75);
+ 	color: white;
+ 	position: relative;
+ }
+
+ #dropdown-user a:hover {
+ 	border-left: 5px solid var(--theme-color-blue-dark);
+ 	box-sizing: border-box;
+ }
+ 
+ #dropdown-message a:hover,
+ #dropdown-notification a:hover {
+ 	border-left: 5px solid var(--theme-color-red-dark);
+ 	box-sizing: border-box;
+ }
