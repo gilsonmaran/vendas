@@ -6,6 +6,9 @@
 	<!-- CSS Personalizado -->
 	<link rel="stylesheet" type="text/css" href="css/master.css">
 
+	<!-- Animações -->
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
+
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	
@@ -104,19 +107,19 @@
 			</div>
 
 			<div id="message-notify" class="box message red">	
-				<i id="message" class="fas fa-envelope"></i>
-				<i id="notification" class="fas fa-bell"></i>
+				<i class="fas fa-envelope" data-dropdown="message"></i>
+				<i class="fas fa-bell" data-dropdown="notification"></i>
 				
-				<div id="dropdown-message">
+				<div id="dropdown-message" class="dropdown bg-dd-red">
 					<ul>
-						<a href="#">Mensageesdaasdasdsadsm 1</a>
+						<a href="#">Mensagem 1</a>
 						<a href="#">Mensagem 2</a>
 						<a href="#">Mensagem 3</a>
 						<a href="#">Mensagem 4</a>
 					</ul>
 				</div>
 
-				<div id="dropdown-notification">
+				<div id="dropdown-notification" class="dropdown bg-dd-red">
 					<ul>
 						<a href="#">Notificação 1</a>
 						<a href="#">Notificação 2</a>
@@ -128,12 +131,14 @@
 			</div>
 
 			<div class="box blue">
-				<div id="user" class="user">
+				<div class="user" data-dropdown="user">
 					Usuário
 					<i class="fas fa-angle-down"></i>
+	
 				</div>
-				<div id="dropdown-user">
+				<div id="dropdown-user" class="dropdown bg-dd-blue">
 					<ul>
+						<li><a href="#">Perfil</a></li>
 						<li><a href="#">Sair</a></li>
 					</ul>
 				</div>

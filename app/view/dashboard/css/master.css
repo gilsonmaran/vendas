@@ -158,6 +158,10 @@
  	font-size: 30px;
  }
 
+.box-info:hover i {
+	transform: scale(1.5) rotate(-10deg);
+	transition: all ease 1s;
+}
 /* -------------------------
  * DAHSBOARD
  * -----------------------*/
@@ -198,9 +202,7 @@
 /* -------------------------
  * DROPDOWN
  * -----------------------*/
- #dropdown-user a,
- #dropdown-message a,
- #dropdown-notification a {
+ .dropdown a {
  	text-decoration: none;
  	display: block;
  	padding: 20px;
@@ -210,13 +212,11 @@
  	position: relative;
  }
 
- #dropdown-user a:hover {
- 	border-left: 5px solid var(--theme-color-blue-dark);
+ .dropdown a:hover {
  	box-sizing: border-box;
  }
- 
- #dropdown-message a:hover,
- #dropdown-notification a:hover {
- 	border-left: 5px solid var(--theme-color-red-dark);
- 	box-sizing: border-box;
- }
+
+ .bg-dd-red a:hover {border-left: 5px solid var(--theme-color-red-dark); }
+ .bg-dd-blue a:hover {border-left: 5px solid var(--theme-color-blue-dark); }
+ .bg-dd-green a:hover {border-left: 5px solid var(--theme-color-green-dark); }
+ .bg-dd-orange a:hover {border-left: 5px solid var(--theme-color-orange-dark); }

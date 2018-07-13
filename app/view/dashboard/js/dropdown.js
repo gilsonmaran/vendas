@@ -1,32 +1,25 @@
 
 $(document).ready(function() {
-	$('#dropdown-user').hide();
-	$('#dropdown-message').hide();
-	$('#dropdown-notification').hide();
+	closeAllDropdown();
 
-	$('#user').click(function() {
-		let dropdown = $('#dropdown-user').select();
-		let status = $(dropdown).is(':visible');
-		openCloseDropdown(status, dropdown);
-	});
-
-	$('#message').click(function() {	
-		let dropdown = $('#dropdown-message').select();
-		let status = $(dropdown).is(':visible');
-		openCloseDropdown(status, dropdown);
-	});
-
-	$('#notification').click(function() {
-		let dropdown = $('#dropdown-notification').select();
-		let status = $(dropdown).is(':visible');
-		openCloseDropdown(status, dropdown);
+	$('[data-dropdown]').click(function() {
+		let dropdown = '#dropdown-' + $(this).data('dropdown');
+		openOrCloseDropdown(dropdown);
 	});
 });
 
+function closeAllDropdown() {
+	$('[data-dropdown]').each(function() {
+		let dropdown = '#dropdown-' + $(this).data('dropdown');
+		$(dropdown).hide();
+	});
+}
 
-function openCloseDropdown(status, dropdown) {
-	if (status)
+function openOrCloseDropdown(dropdown) {
+	let status = $(dropdown).is(':visible');
+
+	if (status) 
 		$(dropdown).slideUp('slow');
-	else
+	else 
 		$(dropdown).slideDown('slow');
 }
