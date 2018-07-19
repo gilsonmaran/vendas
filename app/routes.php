@@ -1,25 +1,20 @@
-
-
 <?php 
 
-//namespace App\Route;
-
 class Route {
-
+	
 	public function __construct() {
-		$this->initRoute();
-		$this->run($this->getURL());
+		$this->initRoutes();
+		$this->view($this->getURL());
 	}
 
-	// Registro de todas as rotas de nosso sistema.
-	public function initRoute() {
+	/*
+	 * Função responsável por armazenar todas as rotas do sistema.
+	 */
+	public function initRoutes() {
 		$this->route['/'] = array('controller' => 'indexController', 'action' => 'index');
-		$this->route['/lista'] = array('controller' => 'indexController', 'action' => 'lista');
-		print_r($this->route);
 	}
 
-	public function run($url) {
-		echo $url;
+	public function view($url) {
 		if(array_key_exists($url, $this->route)) {
 			$class = '\\app\\controller' .  $this->route[$url]['controller'];
 			$controller = new $class;
@@ -34,4 +29,3 @@ class Route {
 }
 
 $route = new Route();
-?>
