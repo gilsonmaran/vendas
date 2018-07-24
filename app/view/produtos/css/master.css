@@ -1,0 +1,175 @@
+:root {
+	--default: #ddd;
+	--blue: #1C95DE;
+	--blue-dark: #1986c7;
+
+	--green: #A4D200;
+	--green-dark: #93bd00;
+	
+	--orange: #F89A0A;
+	--orange-dark: #e18b06;
+
+	--red: #F24740;
+	--red-dark: #f02b23;
+
+	--purple: #8F43AF;
+	--purple-dark: #803c9d;
+
+	--text: #333;
+	--gray-0: #F6F6F6;
+	--gray-1: #DDD;
+	--gray-2: #999;
+	--gray-3: #666;
+	--gray-4: #333;
+}
+
+/*  -------------------------
+ * RESET
+ * ------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/*  -------------------------
+ * CORES
+ * ------------------------*/
+ .red {background-color: var(--red);}
+ .red:hover {background-color: var(--red-dark);}
+ .t-red {color: var(--red);}
+
+ .blue {background-color: var(--blue);}
+ .blue:hover {background-color: var(--blue-dark);}
+ .t-blue: {color: var(--blue);}
+
+ .green {background-color: var(--green);}
+ .green:hover {background-color: var(--green-dark);}
+ .t-green {color: var(--green);}
+ 
+ .orange {background-color: var(--orange);}
+ .orange:hover {background-color: var(--orange-dark);}
+ .t-orange {color: var(--orange);}
+
+ .bg-dd-red a:hover {border-left: 5px solid var(--red-dark); }
+ .bg-dd-blue a:hover {border-left: 5px solid var(--blue-dark); }
+ .bg-dd-green a:hover {border-left: 5px solid var(--green-dark); }
+ .bg-dd-orange a:hover {border-left: 5px solid var(--orange-dark); }
+
+
+ * {margin: 0; padding: 0;}
+
+ body {
+ 	font-family: 'Montserrat', 'Verdana', sans-serif;
+ 	font-size: 12px;
+ 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGUlEQVQImWNIqL7tiwszJFTf9mXABQabJAAKGxooqye0mwAAAABJRU5ErkJggg==), 
+ 	linear-gradient(to right, rgba(0, 126, 174, .85), rgba(26, 193, 187, .85));
+ }
+
+ .container {
+ 	width: 60%;
+ 	margin:  40px auto;
+ }
+
+ /*  -------------------------
+ * FORMULÁRIO
+ * ------------------------*/
+ .form-box {
+ 	background-color: white;
+ 	padding: 25px;
+ 	box-shadow: 0 10px 20px 0 rgba(0,0,0,0.4)
+ }
+
+ .form-title {
+ 	font-size: 24px;
+ 	margin: 40px 0;
+ }
+ 
+ form label {
+ 	line-height: 1.2;
+ 	font-size: 14px;
+ }
+
+
+ form input,
+ form select,
+ form button {
+ 	margin: 10px 0;
+ 	display: block;
+ 	font-size: 16px;
+ 	border: none;
+ 	height: 35px;
+ 	width: 100%;
+ 	background-color: var(--gray-0);
+ }
+
+ form input[type="submit"],
+ form input[type="reset"],
+ form button {
+ 	display: inline;
+ 	width: 200px;
+ 	border: none;
+ 	color: white;
+ }
+
+/*  -------------------------
+ * TABELA
+ * ------------------------*/
+ table {
+ 	width: 100%;
+ 	font-family: 'Segoe UI', Arial, sans-serif;
+ 	font-size: 14px;
+ }
+
+ thead {font-weight: bold;}
+
+ td {padding: 5px;}
+ td:first-child {width: 30px;}
+ td:last-child {width: 100px;}
+
+
+ table .fas {
+ 	font-size: 18px;
+ 	padding: 0 5px;
+ }
